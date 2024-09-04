@@ -1,0 +1,10 @@
+.user-box{
+    padding: 15px;
+    border: 1px solid #fff;
+
+}
+.user-box a{
+    color: #222;
+    background: #fff;
+    padding: 5px 10px;
+}
