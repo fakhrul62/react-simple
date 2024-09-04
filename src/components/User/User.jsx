@@ -6,7 +6,7 @@ const User = ({user}) => {
     const navigate = useNavigate();
 
     const handlBtn = ()=>{
-        navigate(`/user/${id}`)
+        navigate(`/react-simple/user/${id}`)
     }
 
     return (

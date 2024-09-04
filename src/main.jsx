@@ -15,25 +15,25 @@ import ErrorPage from './components/ErrorPage/ErrorPage.jsx';
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/react-simple/",
     element: <Home></Home>,
     errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
-        path: "/about",
+        path: "/react-simple/about",
         element: <About></About>
       },
       {
-        path: "/contact",
+        path: "/react-simple/contact",
         element: <Contact></Contact>
       },
       {
-        path: "/users",
+        path: "/react-simple/users",
         loader: ()=> fetch('https://jsonplaceholder.typicode.com/users'),
         element: <Users></Users>
       },
       {
-        path: "/user/:userId",
+        path: "/react-simple/user/:userId",
         loader: ({params})=> fetch(`https://jsonplaceholder.typicode.com/users/${params.userId}`),
         element: <UserDetails></UserDetails>
       }
